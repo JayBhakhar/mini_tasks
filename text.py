@@ -10,6 +10,3 @@ def fizz_buzz():
             print('Buzz')
         else:
             print(n)
-
-
-fizz_buzz()
