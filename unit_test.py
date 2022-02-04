@@ -8,6 +8,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(convert_unit('fahrenheit', 'celsius', 50), 10.00)
         self.assertEqual(convert_unit('kg', 'pound', 170), 374.785)
         self.assertEqual(convert_unit('pound', 'kg', 200), 90.718)
+        with self.assertRaises(AttributeError):
+            convert_unit('kg', 'pp', 45)
 
 
 if __name__ == '__main__':

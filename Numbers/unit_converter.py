@@ -1,4 +1,10 @@
 def convert_unit(frm: str, to: str, value: float) -> float:
+    """
+    :param frm: unit
+    :param to: unit
+    :param value: value
+    :return: converted value
+    """
     frm, to = frm.lower(), to.lower()
 
     if frm == 'celsius' and to == 'fahrenheit':
@@ -14,7 +20,3 @@ def convert_unit(frm: str, to: str, value: float) -> float:
         return round(value * 0.453592, 3)
 
     raise AttributeError("Unknown units")
-
-
-def conversion_result(frm: str, to: str, value: float) -> str:
-    return f"{value} {frm} is equal to {convert_unit(frm, to, value)} {to}"
