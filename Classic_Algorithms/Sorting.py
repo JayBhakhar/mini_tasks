@@ -1,5 +1,7 @@
 def merge_sort(lst: list) -> list:
-    if len(lst) > 1:
+    if len(lst) <= 1:
+        pass
+    else:
         middle_number = len(lst) // 2
         first_part = lst[:middle_number]
         second_part = lst[middle_number:]
@@ -37,3 +39,4 @@ def bubble_sort(lst):
             if lst[j] > lst[j + 1]:
                 lst[j], lst[j + 1] = lst[j + 1], lst[j]
     return lst
+
