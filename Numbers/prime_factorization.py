@@ -7,10 +7,8 @@ def prime_factorization(n):
         else:
             n //= i
             factors.append(i)
-        # if n > 1:
-        #     factors.append(n)
+    if n > 1:
+        factors.append(n)
     return factors
 
-a = prime_factorization(375)
-print(a)
 

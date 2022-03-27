@@ -10,7 +10,3 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(convert_unit('pound', 'kg', 200), 90.718)
         with self.assertRaises(AttributeError):
             convert_unit('kg', 'pp', 45)
-
-
-if __name__ == '__main__':
-    unittest.main()
